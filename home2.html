@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasCraft Studio | Large-Scale Painter</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicons/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicons/favicon-512x512.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="navbar-brand brand-logo-wrapper">
+                <img src="assets/img/brand-logo.png" alt="CanvasCraft Studio Logo" class="brand-logo-img">
+                <span class="fs-4 fw-bold m-0" style="color: var(--cc-secondary); font-family: var(--font-heading); line-height: 1;">CanvasCraft</span>
+            </a>
+            
+            <nav class="d-none d-lg-flex">
+                <a href="index.html" class="nav-link">Home 1</a>
+                <a href="home2.html" class="nav-link active">Home 2</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="case-studies.html" class="nav-link">Case Studies</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="d-flex align-items-center gap-3">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="bi bi-moon"></i>
+                </button>
+                <a href="booking.html" class="btn-primary-brand d-none d-md-inline-block">Start a Project</a>
+                <button class="navbar-toggler d-lg-none btn border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <i class="bi bi-list fs-2 text-primary-brand"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Offcanvas -->
+    <div class="offcanvas offcanvas-end bg-surface" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <div class="brand-logo-wrapper">
+            <img src="assets/img/brand-logo.png" alt="CanvasCraft Studio Logo" class="brand-logo-img">
+                <span class="fs-5 fw-bold m-0" style="color: var(--cc-secondary); font-family: var(--font-heading); line-height: 1;">CanvasCraft</span>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex flex-column gap-3 fs-5">
+                <a href="index.html" class="text-decoration-none text-body">Home 1</a>
+                <a href="home2.html" class="text-decoration-none text-primary-brand">Home 2</a>
+                <a href="about.html" class="text-decoration-none text-body">About</a>
+                <a href="services.html" class="text-decoration-none text-body">Services</a>
+                <a href="portfolio.html" class="text-decoration-none text-body">Portfolio</a>
+                <a href="case-studies.html" class="text-decoration-none text-body">Case Studies</a>
+                <a href="contact.html" class="text-decoration-none text-body">Contact</a>
+                <a href="booking.html" class="btn-primary-brand text-center mt-4">Start a Project</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 1. Creative Split Hero -->
+        <section class="split-hero">
+            <div class="container-fluid p-0">
+                <div class="row g-0 h-100">
+                    <div class="col-lg-5 split-hero-text">
+                        <div class="reveal-up">
+                            <span class="badge bg-dark text-white rounded-pill px-3 py-2 mb-4 d-inline-block" style="background-color: var(--cc-primary) !important;">Bespoke Mural Art</span>
+                            <h1 class="display-4 fw-bold mb-4">Art Without Boundaries</h1>
+                            <p class="fs-5 text-muted mb-5">I create high-impact, custom large-scale paintings that define the identity of modern spaces.</p>
+                            <div class="d-flex gap-4 align-items-center">
+                                <a href="portfolio.html" class="btn-primary-brand magnetic-btn">View My Work</a>
+                                <a href="contact.html" class="text-primary-brand fw-bold text-decoration-none border-bottom border-primary">Get In Touch</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 split-hero-img"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Large Scale Projects -->
+        <section class="large-project-section section-padding">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 order-2 order-lg-1 stagger-item">
+                        <img src="assets/img/home2-large.png" alt="Massive building mural painting" class="img-fluid large-project-img">
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 reveal-up">
+                        <h2 class="display-5 mb-4">Thinking Big.<br><span class="text-primary-brand">Painting Bigger.</span></h2>
+                        <p class="opacity-75 fs-5 mb-4">Specializing in colossal building facades and urban developments. Utilizing industrial equipment, premium weather-resistant paints, and extreme attention to detail, no wall is too large for my vision.</p>
+                        <ul class="list-unstyled opacity-75 fs-5 mb-5">
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-primary-brand me-2"></i> Cherry Picker & Boom Lift Certified</li>
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-primary-brand me-2"></i> Weather & UV Resistant Coatings</li>
+                            <li><i class="bi bi-check-circle-fill text-primary-brand me-2"></i> Comprehensive Site Logistics Management</li>
+                        </ul>
+                        <a href="services.html" class="btn btn-outline-primary rounded-pill px-4 py-2">Explore Large Scale Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Industries Served -->
+        <section class="section-padding bg-surface">
+            <div class="container">
+                <div class="text-center mb-5 reveal-up">
+                    <span class="text-primary-brand fw-bold text-uppercase">Sectors</span>
+                    <h2 class="display-5 mt-2">Industries I Serve</h2>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 stagger-item">
+                        <div class="p-4 border rounded-4 h-100 position-relative hover-lift d-flex flex-column">
+                            <i class="bi bi-building fs-1 text-primary-brand mb-3"></i>
+                            <h3 class="h5 mb-3">Commercial</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Transforming massive building exteriors into iconic community landmarks.</p>
+                            <a href="service-details.html" class="btn btn-outline-primary rounded-pill mt-auto">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 stagger-item" style="transition-delay: 0.2s;">
+                        <div class="p-4 border rounded-4 h-100 position-relative hover-lift d-flex flex-column">
+                            <i class="bi bi-shop fs-1 text-primary-brand mb-3"></i>
+                            <h3 class="h5 mb-3">Hospitality</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Luxury feature walls for hotels, restaurants, and premium lobbies.</p>
+                            <a href="service-details.html" class="btn btn-outline-primary rounded-pill mt-auto">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 stagger-item" style="transition-delay: 0.4s;">
+                        <div class="p-4 border rounded-4 h-100 position-relative hover-lift d-flex flex-column">
+                            <i class="bi bi-briefcase fs-1 text-primary-brand mb-3"></i>
+                            <h3 class="h5 mb-3">Corporate</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Inspiring workplace murals that boost culture and productivity.</p>
+                            <a href="service-details.html" class="btn btn-outline-primary rounded-pill mt-auto">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 stagger-item" style="transition-delay: 0.6s;">
+                        <div class="p-4 border rounded-4 h-100 position-relative hover-lift d-flex flex-column">
+                            <i class="bi bi-house-door fs-1 text-primary-brand mb-3"></i>
+                            <h3 class="h5 mb-3">Residential</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Bespoke private commissions for luxury homes and estates.</p>
+                            <a href="service-details.html" class="btn btn-outline-primary rounded-pill mt-auto">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Before & After Showcase -->
+        <section class="section-padding">
+            <div class="container text-center reveal-up">
+                <h2 class="display-5 mb-3">The Transformation</h2>
+                <p class="text-muted fs-5 mb-5 max-w-700 mx-auto">Slide to see how a plain concrete wall in a public park was transformed into a vibrant cultural landmark.</p>
+                
+                <div class="ba-slider mb-4">
+                    <!-- Before Image -->
+                    <img src="assets/img/home2-before.png" alt="Before Mural" class="ba-img">
+                    <!-- After Image -->
+                    <div class="ba-after">
+                        <img src="assets/img/home2-after.png" alt="After Mural">
+                    </div>
+                    <!-- Slider Handle -->
+                    <div class="ba-handle">
+                        <div class="ba-handle-btn">
+                            <i class="bi bi-arrows-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-muted small fst-italic">Project: The Parkside Renaissance, 2025</p>
+            </div>
+        </section>
+
+        <!-- 5. Awards / Client Logos -->
+        <section class="section-padding bg-surface">
+            <div class="container text-center reveal-up">
+                <p class="text-muted fw-bold text-uppercase mb-5">Trusted by visionary brands & institutions</p>
+                <div class="d-flex flex-wrap justify-content-center align-items-center gap-5">
+                    <h3 class="award-logo text-muted m-0"><i class="bi bi-google me-2"></i>TechCorp</h3>
+                    <h3 class="award-logo text-muted m-0"><i class="bi bi-buildings me-2"></i>Nexus Dev</h3>
+                    <h3 class="award-logo text-muted m-0"><i class="bi bi-star-fill me-2"></i>Marriott</h3>
+                    <h3 class="award-logo text-muted m-0"><i class="bi bi-shield-check me-2"></i>City Arts Council</h3>
+                    <h3 class="award-logo text-muted m-0"><i class="bi bi-cup-straw me-2"></i>CafÃƒÂ© Locale</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Project Inquiry CTA -->
+        <section class="section-padding text-center">
+            <div class="container reveal-up">
+                <div class="p-5 border border-2 border-primary rounded-4" style="background-color: var(--cc-bg);">
+                    <h2 class="display-4 fw-bold mb-4">Have A Wall In Mind?</h2>
+                    <p class="fs-5 text-muted mb-4 max-w-700 mx-auto">I'm currently accepting new commissions for Q3/Q4. Send me details about your wall dimensions and ideas.</p>
+                    <a href="booking.html" class="btn-primary-brand btn-lg magnetic-btn px-5">Submit Project Inquiry</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Identical Footer Across All Pages -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 pe-lg-5">
+                    <div class="brand-logo-wrapper mb-4">
+                        <img src="assets/img/brand-logo.png" alt="CanvasCraft Studio Logo" class="brand-logo-img">
+                        <span class="fs-3 fw-bold  m-0" style="font-family: var(--font-heading); line-height: 1;">CanvasCraft</span>
+                    </div>
+                    <p class="mb-4">Award-winning freelance mural artist specializing in transforming ordinary walls into extraordinary experiences across commercial, public, and luxury residential spaces.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="h5">Quick Links</h4>
+                    <a href="index.html" class="footer-link">Home 1</a>
+                    <a href="home2.html" class="footer-link text-primary-brand">Home 2</a>
+                    <a href="about.html" class="footer-link">About The Artist</a>
+                    <a href="portfolio.html" class="footer-link">Portfolio</a>
+                    <a href="case-studies.html" class="footer-link">Case Studies</a>
+                    <a href="pricing.html" class="footer-link">Pricing & FAQ</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h5">Specialties</h4>
+                    <a href="services.html" class="footer-link">Large-Scale Facades</a>
+                    <a href="services.html" class="footer-link">Luxury Hospitality</a>
+                    <a href="services.html" class="footer-link">Corporate Offices</a>
+                    <a href="services.html" class="footer-link">Street & Public Art</a>
+                    <a href="services.html" class="footer-link">Residential Interiors</a>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="h5">Studio Notes</h4>
+                    <p class="small mb-3">Subscribe to get behind-the-scenes looks at ongoing mural projects and creative tips.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control rounded-start-pill" placeholder="Email Address">
+                        <button class="btn btn-primary-brand rounded-end-pill px-3" type="button" style="padding: 10px 15px;"><i class="bi bi-send"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0 text-secondary small">&copy; 2026 CanvasCraft Studio. All Rights Reserved.</p>
+                <div class="social-icons mt-3 mt-md-0">
+                    <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" aria-label="Back to top" style="margin-right: 0;" title="Back to top">
+                        <i class="bi bi-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

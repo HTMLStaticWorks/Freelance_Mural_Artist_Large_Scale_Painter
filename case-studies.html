@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CanvasCraft Studio - Case Studies. In-depth looks at how our large-scale murals transform spaces and solve creative challenges.">
+    <title>Case Studies | CanvasCraft Studio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+</head>
+
+<body>
+    <!-- Identical Header Across All Pages -->
+    <header class="fixed-top transition-smooth">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between py-3">
+                <div class="brand-logo-wrapper">
+                    <img src="assets/img/brand-logo.png" alt="CanvasCraft Studio Logo" class="brand-logo-img">
+                    <span class="fs-4 fw-bold m-0" style="color: var(--cc-secondary); font-family: var(--font-heading); line-height: 1;">CanvasCraft</span>
+                </div>
+
+                <nav class="d-none d-lg-flex">
+                    <a href="index.html" class="nav-link">Home 1</a>
+                    <a href="home2.html" class="nav-link">Home 2</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    <a href="case-studies.html" class="nav-link active">Case Studies</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <div class="d-flex align-items-center gap-3">
+                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                        <i class="bi bi-moon"></i>
+                    </button>
+                    <a href="booking.html" class="btn-primary-brand d-none d-md-inline-block">Start a Project</a>
+                    <button class="navbar-toggler d-lg-none btn border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <i class="bi bi-list fs-2 text-primary-brand"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Offcanvas -->
+    <div class="offcanvas offcanvas-end bg-surface" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+        <div class="brand-logo-wrapper">
+            <img src="assets/img/brand-logo.png" alt="CanvasCraft Studio Logo" class="brand-logo-img">
+            <span class="fs-5 fw-bold m-0" style="color: var(--cc-secondary); font-family: var(--font-heading); line-height: 1;">CanvasCraft</span>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+        <div class="offcanvas-body">
+            <div class="d-flex flex-column gap-3 fs-5">
+                <a href="index.html" class="text-decoration-none text-body">Home 1</a>
+                <a href="home2.html" class="text-decoration-none text-body">Home 2</a>
+                <a href="about.html" class="text-decoration-none text-body">About</a>
+                <a href="services.html" class="text-decoration-none text-body">Services</a>
+                <a href="portfolio.html" class="text-decoration-none text-body">Portfolio</a>
+                <a href="case-studies.html" class="text-decoration-none text-primary-brand">Case Studies</a>
+                <a href="pricing.html" class="text-decoration-none text-body">Pricing</a>
+                <a href="contact.html" class="text-decoration-none text-body">Contact</a>
+                <a href="booking.html" class="btn-primary-brand text-center mt-4">Start a Project</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- 1. Editorial Hero Banner -->
+        <section class="section-padding pb-0 bg-bg overflow-hidden position-relative">
+            <div class="container pt-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 reveal-up">
+                        <span class="text-primary-brand text-uppercase fw-bold letter-spacing-2">Deep Dives</span>
+                        <h1 class="display-2 fw-bold mt-3 mb-4">Transformations Detailed.</h1>
+                        <p class="fs-4 text-muted mb-5">Explore the strategy, challenges, and results behind my most ambitious mural projects. It's more than just paint on a wall.</p>
+                        <a href="#featured" class="btn-primary-brand btn-lg magnetic-btn border-0">Read Case Studies</a>
+                    </div>
+                    <div class="col-lg-6 reveal-up" style="transition-delay: 0.2s;">
+                        <div class="position-relative">
+                            <img src="assets/img/case_study_hero.png" alt="Luxury Hotel Mural" class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover" style="height: 600px; transform: rotate(2deg);">
+                            <div class="position-absolute bottom-0 start-0 bg-surface p-4 rounded-4 shadow-sm m-4 z-1 max-w-300">
+                                <h3 class="h5 m-0 fw-bold">The Grand Plaza Hotel</h3>
+                                <p class="text-muted small m-0 mt-2">1,200 sq.ft lobby transformation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Featured Case Studies Cards -->
+        <section id="featured" class="section-padding bg-bg mt-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-12 stagger-item">
+                        <div class="case-study-featured-card bg-surface rounded-4 overflow-hidden border">
+                            <div class="row g-0">
+                                <div class="col-md-6 position-relative">
+                                    <img src="assets/img/case_study_detail.png" alt="Mural Texture" class="img-fluid w-100 h-100 object-fit-cover">
+                                    <div class="position-absolute top-0 start-0 m-4">
+                                        <span class="badge bg-primary-brand text-white px-3 py-2 shadow">Corporate Strategy</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 p-5 p-lg-5 d-flex flex-column justify-content-center">
+                                    <h2 class="display-6 fw-bold mb-4">TechHub HQ Revitalization</h2>
+                                    <p class="text-muted fs-5 mb-4">How we used dynamic geometric patterns and color psychology to boost employee morale and reflect the company's forward-thinking ethos across three floors.</p>
+                                    <div class="d-flex gap-4 mb-5">
+                                        <div>
+                                            <h4 class="h3 fw-bold text-primary-brand m-0">3 Weeks</h4>
+                                            <p class="text-muted small m-0">Timeline</p>
+                                        </div>
+                                        <div>
+                                            <h4 class="h3 fw-bold text-primary-brand m-0">4,500</h4>
+                                            <p class="text-muted small m-0">Sq. Ft. Covered</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-primary-brand text-decoration-none fw-bold fs-5 d-inline-flex align-items-center gap-2">Read Full Case Study <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Detailed Case Study Timeline -->
+        <section class="section-padding bg-surface">
+            <div class="container">
+                <div class="row justify-content-center mb-5 reveal-up">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="display-5 fw-bold mb-3">The Anatomy of a Project</h2>
+                        <p class="text-muted fs-5">A standard breakdown of how complex environments are successfully navigated and transformed.</p>
+                    </div>
+                </div>
+                
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6 p-4 p-lg-5 stagger-item border-end border-bottom">
+                        <div class="d-flex align-items-start gap-4">
+                            <div class="bg-primary-brand-light text-primary-brand rounded-circle d-flex align-items-center justify-content-center shrink-0" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                                1
+                            </div>
+                            <div>
+                                <h3 class="h3 fw-bold mb-3">The Challenge</h3>
+                                <p class="text-muted">Analyzing the space, understanding foot traffic, assessing lighting conditions, and identifying the core emotional goals the client wants to achieve with the artwork.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-4 p-lg-5 stagger-item border-bottom">
+                        <div class="d-flex align-items-start gap-4">
+                            <div class="bg-primary-brand-light text-primary-brand rounded-circle d-flex align-items-center justify-content-center shrink-0" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                                2
+                            </div>
+                            <div>
+                                <h3 class="h3 fw-bold mb-3">The Strategy</h3>
+                                <p class="text-muted">Developing a visual language that aligns with the brand identity. Selecting durable, non-toxic materials suited for the specific wall texture and environmental exposure.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-4 p-lg-5 stagger-item border-end">
+                        <div class="d-flex align-items-start gap-4">
+                            <div class="bg-primary-brand-light text-primary-brand rounded-circle d-flex align-items-center justify-content-center shrink-0" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                                3
+                            </div>
+                            <div>
+                                <h3 class="h3 fw-bold mb-3">The Solution</h3>
+                                <p class="text-muted">Executing the artwork using specialized scaffolding and spray equipment. Working around business hours to minimize disruption while delivering precision detailing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-4 p-lg-5 stagger-item">
+                        <div class="d-flex align-items-start gap-4">
+                            <div class="bg-primary-brand-light text-primary-brand rounded-circle d-flex align-items-center justify-content-center shrink-0" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                                4
+                            </div>
+                            <div>
+                                <h3 class="h3 fw-bold mb-3">The Results</h3>
+                                <p class="text-muted">Measuring the impact through client feedback, increased foot traffic, social media engagement, and the overall atmospheric shift of the renovated space.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Before & After Comparison -->
+        <section class="section-padding bg-bg overflow-hidden">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 reveal-up">
+                        <span class="text-primary-brand text-uppercase fw-bold letter-spacing-2">Impact</span>
+                        <h2 class="display-5 fw-bold mt-2 mb-4">Urban Alleyway Oasis</h2>
+                        <p class="text-muted fs-5 mb-4">This city beautification project aimed to turn a dark, unwelcoming concrete alleyway into a vibrant pedestrian corridor.</p>
+                        <ul class="list-unstyled mb-5">
+                            <li class="d-flex align-items-center gap-3 mb-3 text-muted">
+                                <i class="bi bi-check-circle-fill text-primary-brand fs-5"></i>
+                                Decreased local vandalism by 85%
+                            </li>
+                            <li class="d-flex align-items-center gap-3 mb-3 text-muted">
+                                <i class="bi bi-check-circle-fill text-primary-brand fs-5"></i>
+                                Increased pedestrian traffic by 300%
+                            </li>
+                            <li class="d-flex align-items-center gap-3 text-muted">
+                                <i class="bi bi-check-circle-fill text-primary-brand fs-5"></i>
+                                Featured in 3 local architectural magazines
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7 reveal-up">
+                        <div class="before-after-container position-relative rounded-4 overflow-hidden shadow-lg border">
+                            <div class="row g-0">
+                                <div class="col-6 position-relative">
+                                    <img src="assets/img/case_study_before.png" alt="Before Mural" class="img-fluid w-100 object-fit-cover" style="height: 500px;">
+                                    <div class="position-absolute top-0 start-0 bg-dark text-white px-3 py-1 m-3 rounded shadow-sm fw-bold">Before</div>
+                                </div>
+                                <div class="col-6 position-relative">
+                                    <img src="assets/img/case_study_after.png" alt="After Mural" class="img-fluid w-100 object-fit-cover" style="height: 500px;">
+                                    <div class="position-absolute top-0 end-0 bg-primary-brand text-white px-3 py-1 m-3 rounded shadow-sm fw-bold">After</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Final CTA -->
+        <section class="section-padding bg-surface position-relative overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="position-absolute top-0 end-0 p-5 opacity-10 pointer-events-none">
+                <i class="bi bi-brush display-1"></i>
+            </div>
+            
+            <div class="container text-center reveal-up position-relative z-1">
+                <h2 class="display-4 fw-bold mb-4">Have a challenging space?</h2>
+                <p class="fs-4 text-muted max-w-700 mx-auto mb-5">Let's write the next successful case study together. Whether it's a massive exterior facade or an intimate luxury interior.</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="booking.html" class="btn-primary-brand btn-lg magnetic-btn">Discuss Your Project</a>
+                    <a href="portfolio.html" class="btn btn-outline-dark btn-lg rounded-pill" style="border-color: var(--cc-border); color: var(--cc-text);">Browse Gallery</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Identical Footer Across All Pages -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 pe-lg-5">
+                    <div class="brand-logo-wrapper mb-4">
+                        <img src="assets/img/brand-logo.png" alt="CanvasCraft Studio Logo" class="brand-logo-img">
+                        <span class="fs-3 fw-bold  m-0"
+                            style="font-family: var(--font-heading); line-height: 1;">CanvasCraft</span>
+                    </div>
+                    <p class="mb-4 text-muted">Award-winning freelance mural artist specializing in transforming ordinary walls
+                        into extraordinary experiences across commercial, public, and luxury residential spaces.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="h5">Quick Links</h4>
+                    <a href="index.html" class="footer-link">Home 1</a>
+                    <a href="home2.html" class="footer-link">Home 2</a>
+                    <a href="about.html" class="footer-link">About The Artist</a>
+                    <a href="portfolio.html" class="footer-link">Portfolio</a>
+                    <a href="case-studies.html" class="footer-link text-primary-brand">Case Studies</a>
+                    <a href="pricing.html" class="footer-link">Pricing & FAQ</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h5">Specialties</h4>
+                    <a href="services.html" class="footer-link">Large-Scale Facades</a>
+                    <a href="services.html" class="footer-link">Luxury Hospitality</a>
+                    <a href="services.html" class="footer-link">Corporate Offices</a>
+                    <a href="services.html" class="footer-link">Street & Public Art</a>
+                    <a href="services.html" class="footer-link">Residential Interiors</a>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="h5">Studio Notes</h4>
+                    <p class="small mb-3 text-muted">Subscribe to get behind-the-scenes looks at ongoing mural projects and
+                        creative tips.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control rounded-start-pill" placeholder="Email Address">
+                        <button class="btn btn-primary-brand rounded-end-pill px-3" type="button"
+                            style="padding: 10px 15px;"><i class="bi bi-send"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-5 pb-4">
+                <p class="mb-2 mb-md-0 text-muted small">&copy; 2026 CanvasCraft Studio. All Rights Reserved.</p>
+                <div class="social-icons mt-3 mt-md-0">
+                    <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;"
+                        aria-label="Back to top" style="margin-right: 0;" title="Back to top">
+                        <i class="bi bi-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

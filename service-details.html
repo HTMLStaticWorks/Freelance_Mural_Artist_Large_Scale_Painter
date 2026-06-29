@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details | CanvasCraft Studio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicons/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicons/favicon-512x512.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="navbar-brand brand-logo-wrapper">
+                <img src="assets/img/brand-logo.png" alt="CanvasCraft Studio Logo" class="brand-logo-img">
+                <span class="fs-4 fw-bold m-0" style="color: var(--cc-secondary); font-family: var(--font-heading); line-height: 1;">CanvasCraft</span>
+            </a>
+            
+            <nav class="d-none d-lg-flex">
+                <a href="index.html" class="nav-link">Home 1</a>
+                <a href="home2.html" class="nav-link">Home 2</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="case-studies.html" class="nav-link">Case Studies</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="d-flex align-items-center gap-3">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="bi bi-moon"></i>
+                </button>
+                <a href="booking.html" class="btn-primary-brand d-none d-md-inline-block">Start a Project</a>
+                <button class="navbar-toggler d-lg-none btn border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <i class="bi bi-list fs-2 text-primary-brand"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Offcanvas -->
+    <div class="offcanvas offcanvas-end bg-surface" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <div class="brand-logo-wrapper">
+            <img src="assets/img/brand-logo.png" alt="CanvasCraft Studio Logo" class="brand-logo-img">
+                <span class="fs-5 fw-bold m-0" style="color: var(--cc-secondary); font-family: var(--font-heading); line-height: 1;">CanvasCraft</span>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex flex-column gap-3 fs-5">
+                <a href="index.html" class="text-decoration-none text-body">Home 1</a>
+                <a href="home2.html" class="text-decoration-none text-body">Home 2</a>
+                <a href="about.html" class="text-decoration-none text-body">About</a>
+                <a href="services.html" class="text-decoration-none text-primary-brand">Services</a>
+                <a href="portfolio.html" class="text-decoration-none text-body">Portfolio</a>
+                <a href="case-studies.html" class="text-decoration-none text-body">Case Studies</a>
+                <a href="contact.html" class="text-decoration-none text-body">Contact</a>
+                <a href="booking.html" class="btn-primary-brand text-center mt-4">Start a Project</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- 1. Hero -->
+        <section class="sd-hero text-center px-3 px-md-0 reveal-up">
+            <div class="container">
+                <span class="badge bg-dark text-white rounded-pill px-3 py-2 mb-3" style="background-color: var(--cc-primary) !important;">Service Profile</span>
+                <h1 class="display-3 fw-bold mb-5">Corporate Offices</h1>
+                <img src="assets/img/service-details-hero.png" alt="Corporate Office Mural" class="sd-hero-img shadow-lg">
+            </div>
+        </section>
+
+        <!-- 2. Service Overview -->
+        <section class="section-padding bg-surface mt-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 stagger-item">
+                        <h2 class="display-5 mb-4">Elevating Workspace Culture</h2>
+                        <p class="fs-5 text-muted mb-4">A boring white wall in an office doesn't inspire innovation. Corporate murals are designed to physically manifest a company's core values, history, and mission directly onto their workspace walls.</p>
+                        <p class="text-muted mb-4">From tech startups in Silicon Valley to established law firms in New York, I design and execute bespoke murals that turn mundane offices into vibrant, energetic environments where employees want to work and clients are immediately impressed.</p>
+                        <ul class="list-unstyled text-muted mt-4">
+                            <li class="mb-2"><i class="bi bi-arrow-right text-primary-brand me-2"></i> Brand Identity Integration</li>
+                            <li class="mb-2"><i class="bi bi-arrow-right text-primary-brand me-2"></i> Low-VOC, Odorless Paints for Indoor Safety</li>
+                            <li class="mb-2"><i class="bi bi-arrow-right text-primary-brand me-2"></i> Weekend Installation Available to Avoid Disruption</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 stagger-item" style="transition-delay: 0.2s;">
+                        <div class="p-5 border border-primary rounded-4" style="border-width: 2px !important;">
+                            <h3 class="h4 mb-4">Service Specs</h3>
+                            <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                                <span class="fw-bold">Typical Scale:</span>
+                                <span class="text-muted">100 - 1,000 Sq.Ft</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                                <span class="fw-bold">Timeline:</span>
+                                <span class="text-muted">1 - 3 Weeks</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                                <span class="fw-bold">Primary Medium:</span>
+                                <span class="text-muted">Acrylic & Low-VOC Spray</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-bold">Starting Price:</span>
+                                <span class="text-muted">$3,500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Project Workflow -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5 reveal-up">
+                    <h2 class="display-5">How We Work Together</h2>
+                    <p class="text-muted fs-5">A seamless integration from your brand guidelines to the finished wall.</p>
+                </div>
+                
+                <div class="row g-4 mt-4">
+                    <div class="col-md-3 stagger-item">
+                        <div class="sd-workflow-box h-100">
+                            <h3 class="text-primary-brand display-6 fw-bold mb-3">01.</h3>
+                            <h4 class="h5 mb-3">The Brief</h4>
+                            <p class="text-muted small mb-0">We analyze your brand book, office architecture, and cultural goals to establish the creative direction.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 stagger-item" style="transition-delay: 0.1s;">
+                        <div class="sd-workflow-box h-100">
+                            <h3 class="text-primary-brand display-6 fw-bold mb-3">02.</h3>
+                            <h4 class="h5 mb-3">Digital Concepts</h4>
+                            <p class="text-muted small mb-0">I provide 2-3 unique digital mockups superimposed on photos of your actual office walls.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 stagger-item" style="transition-delay: 0.2s;">
+                        <div class="sd-workflow-box h-100">
+                            <h3 class="text-primary-brand display-6 fw-bold mb-3">03.</h3>
+                            <h4 class="h5 mb-3">Refinement</h4>
+                            <p class="text-muted small mb-0">We adjust colors, scale, and elements based on your feedback until the design is approved.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 stagger-item" style="transition-delay: 0.3s;">
+                        <div class="sd-workflow-box h-100">
+                            <h3 class="text-primary-brand display-6 fw-bold mb-3">04.</h3>
+                            <h4 class="h5 mb-3">Live Painting</h4>
+                            <p class="text-muted small mb-0">Installation occurs over a scheduled period, ensuring minimal disruption to your team's workflow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Related Portfolio -->
+        <section class="section-padding bg-surface">
+            <div class="container reveal-up">
+                <div class="d-flex justify-content-between align-items-end mb-5">
+                    <div>
+                        <h2 class="display-5 m-0">Recent Corporate Work</h2>
+                    </div>
+                    <a href="portfolio.html" class="btn btn-outline-dark rounded-pill px-4">View All</a>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 stagger-item">
+                        <div class="overflow-hidden rounded-4">
+                            <img src="assets/img/service-details-port.png" alt="Tech Office Gallery Mural" class="img-fluid sd-portfolio-img w-100">
+                        </div>
+                        <h4 class="h5 mt-3 mb-1">Nexus Tech Headquarters</h4>
+                        <p class="text-muted small">San Francisco, CA</p>
+                    </div>
+                    <div class="col-md-6 stagger-item" style="transition-delay: 0.2s;">
+                        <div class="overflow-hidden rounded-4">
+                            <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=800&auto=format&fit=crop" alt="Creative Agency Mural" class="img-fluid sd-portfolio-img w-100" style="height: 400px; object-fit:cover;">
+                        </div>
+                        <h4 class="h5 mt-3 mb-1">Ogilvy Creative Agency</h4>
+                        <p class="text-muted small">New York, NY</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Inquiry CTA -->
+        <section class="section-padding text-center">
+            <div class="container reveal-up">
+                <div class="p-5 rounded-4" style="background-color: var(--cc-secondary); color: #fff;">
+                    <h2 class="display-4 fw-bold mb-4 text-white">Inspire Your Team</h2>
+                    <p class="fs-5 text-white-50 mb-4 max-w-700 mx-auto">Bring your company's walls to life. Contact me to request a custom proposal for your office space.</p>
+                    <a href="contact.html" class="btn-primary-brand btn-lg magnetic-btn px-5 text-white">Request Proposal</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 pe-lg-5">
+                    <div class="brand-logo-wrapper mb-4">
+                        <img src="assets/img/brand-logo.png" alt="CanvasCraft Studio Logo" class="brand-logo-img">
+                        <span class="fs-3 fw-bold  m-0" style="font-family: var(--font-heading); line-height: 1;">CanvasCraft</span>
+                    </div>
+                    <p class="mb-4">Award-winning freelance mural artist specializing in transforming ordinary walls into extraordinary experiences across commercial, public, and luxury residential spaces.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="h5">Quick Links</h4>
+                    <a href="index.html" class="footer-link">Home 1</a>
+                    <a href="home2.html" class="footer-link">Home 2</a>
+                    <a href="about.html" class="footer-link">About The Artist</a>
+                    <a href="portfolio.html" class="footer-link">Portfolio</a>
+                    <a href="case-studies.html" class="footer-link">Case Studies</a>
+                    <a href="pricing.html" class="footer-link">Pricing & FAQ</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h5">Specialties</h4>
+                    <a href="services.html" class="footer-link text-primary-brand">Large-Scale Facades</a>
+                    <a href="services.html" class="footer-link text-primary-brand">Luxury Hospitality</a>
+                    <a href="services.html" class="footer-link text-primary-brand">Corporate Offices</a>
+                    <a href="services.html" class="footer-link text-primary-brand">Street & Public Art</a>
+                    <a href="services.html" class="footer-link text-primary-brand">Residential Interiors</a>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="h5">Studio Notes</h4>
+                    <p class="small mb-3">Subscribe to get behind-the-scenes looks at ongoing mural projects and creative tips.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control rounded-start-pill" placeholder="Email Address">
+                        <button class="btn btn-primary-brand rounded-end-pill px-3" type="button" style="padding: 10px 15px;"><i class="bi bi-send"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0 text-secondary small">&copy; 2026 CanvasCraft Studio. All Rights Reserved.</p>
+                <div class="social-icons mt-3 mt-md-0">
+                    <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" aria-label="Back to top" style="margin-right: 0;" title="Back to top">
+                        <i class="bi bi-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
