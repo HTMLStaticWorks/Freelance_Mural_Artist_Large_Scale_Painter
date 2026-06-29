@@ -27,7 +27,7 @@
                     <span class="fs-4 fw-bold m-0" style="color: var(--cc-secondary); font-family: var(--font-heading); line-height: 1;">CanvasCraft</span>
                 </div>
 
-                <nav class="d-none d-lg-flex">
+                <nav class="d-none d-xl-flex">
                     <a href="index.html" class="nav-link">Home 1</a>
                     <a href="home2.html" class="nav-link">Home 2</a>
                     <a href="about.html" class="nav-link">About</a>
@@ -39,11 +39,11 @@
                 </nav>
 
                 <div class="d-flex align-items-center gap-3">
-                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <button class="theme-toggle d-none d-xl-flex" aria-label="Toggle RTL Mode" title="Toggle RTL"><i class="bi bi-arrow-left-right"></i></button><button class="theme-toggle theme-toggle-btn d-none d-xl-flex" aria-label="Toggle Dark Mode">
                         <i class="bi bi-moon"></i>
                     </button>
-                    <a href="booking.html" class="btn-primary-brand d-none d-md-inline-block">Start a Project</a>
-                    <button class="navbar-toggler d-lg-none btn border-0" type="button" data-bs-toggle="offcanvas"
+                    <a href="booking.html" class="btn-primary-brand d-none d-xl-inline-block">Start a Project</a>
+                    <button class="navbar-toggler d-xl-none btn border-0" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#mobileMenu">
                         <i class="bi bi-list fs-2 text-primary-brand"></i>
                     </button>
@@ -71,7 +71,11 @@
                 <a href="case-studies.html" class="text-decoration-none text-body">Case Studies</a>
                 <a href="pricing.html" class="text-decoration-none text-body">Pricing</a>
                 <a href="contact.html" class="text-decoration-none text-body">Contact</a>
-                <a href="booking.html" class="btn-primary-brand text-center mt-4">Start a Project</a>
+                <div class="d-flex gap-4 justify-content-center mt-3">
+                <button class="theme-toggle" aria-label="Toggle RTL Mode" title="Toggle RTL"><i class="bi bi-arrow-left-right"></i></button>
+                <button class="theme-toggle theme-toggle-btn" aria-label="Toggle Dark Mode"><i class="bi bi-moon"></i></button>
+            </div>
+            <a href="booking.html" class="btn-primary-brand text-center mt-4">Start a Project</a>
             </div>
         </div>
     </div>
@@ -225,7 +229,11 @@
                 <div class="cta-card bg-surface p-5 rounded-4 shadow-sm mx-auto mt-5 border" style="max-width: 600px; border-color: var(--cc-border) !important;">
                     <h3 class="h2 mb-3">Ready to transform your space?</h3>
                     <p class="text-muted mb-4">Let's collaborate to bring your vision to life with a stunning, custom mural.</p>
-                    <a href="booking.html" class="btn-primary-brand btn-lg magnetic-btn">Start a Project</a>
+                    <div class="d-flex gap-4 justify-content-center mt-3">
+                <button class="theme-toggle" aria-label="Toggle RTL Mode" title="Toggle RTL"><i class="bi bi-arrow-left-right"></i></button>
+                <button class="theme-toggle theme-toggle-btn" aria-label="Toggle Dark Mode"><i class="bi bi-moon"></i></button>
+            </div>
+            <a href="booking.html" class="btn-primary-brand text-center mt-4">Start a Project</a>
                 </div>
             </div>
         </section>
@@ -297,3 +305,5 @@
 </body>
 
 </html>
+
+

@@ -1,33 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Theme Toggle
-    const themeToggle = document.getElementById('themeToggle');
+    const themeToggles = document.querySelectorAll('.theme-toggle-btn');
     const body = document.documentElement;
-    const themeIcon = themeToggle.querySelector('i');
 
     // Check for saved theme preference
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         body.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(savedTheme);
+        updateThemeIcons(savedTheme);
     }
 
-    themeToggle.addEventListener('click', () => {
-        let currentTheme = body.getAttribute('data-theme');
-        let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
-        body.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateThemeIcon(newTheme);
+    themeToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            let currentTheme = body.getAttribute('data-theme');
+            let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcons(newTheme);
+        });
     });
 
-    function updateThemeIcon(theme) {
-        if (theme === 'dark') {
-            themeIcon.classList.remove('bi-moon');
-            themeIcon.classList.add('bi-sun');
-        } else {
-            themeIcon.classList.remove('bi-sun');
-            themeIcon.classList.add('bi-moon');
-        }
+    function updateThemeIcons(theme) {
+        themeToggles.forEach(toggle => {
+            const themeIcon = toggle.querySelector('i');
+            if (themeIcon) {
+                if (theme === 'dark') {
+                    themeIcon.classList.remove('bi-moon');
+                    themeIcon.classList.add('bi-sun');
+                } else {
+                    themeIcon.classList.remove('bi-sun');
+                    themeIcon.classList.add('bi-moon');
+                }
+            }
+        });
     }
 
     // Sticky Header Shrink
@@ -92,7 +98,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (slider) {
         const afterImg = slider.querySelector('.ba-after');
         const handle = slider.querySelector('.ba-handle');
+        const innerImg = slider.querySelector('.ba-after img');
+        
         let isSliding = false;
+
+        const updateInnerImgWidth = () => {
+            if (innerImg) {
+                innerImg.style.width = slider.offsetWidth + 'px';
+            }
+        };
+        
+        window.addEventListener('resize', updateInnerImgWidth);
+        // Small delay to ensure styles are computed
+        setTimeout(updateInnerImgWidth, 50);
 
         const slide = (e) => {
             if (!isSliding) return;

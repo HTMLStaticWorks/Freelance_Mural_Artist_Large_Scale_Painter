@@ -33,7 +33,7 @@
                     style="color: var(--cc-secondary); font-family: var(--font-heading); line-height: 1;">CanvasCraft</span>
             </a>
 
-            <nav class="d-none d-lg-flex">
+            <nav class="d-none d-xl-flex">
                 <a href="index.html" class="nav-link">Home 1</a>
                 <a href="home2.html" class="nav-link">Home 2</a>
                 <a href="about.html" class="nav-link active">About</a>
@@ -45,11 +45,11 @@
             </nav>
 
             <div class="d-flex align-items-center gap-3">
-                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                <button class="theme-toggle d-none d-xl-flex" aria-label="Toggle RTL Mode" title="Toggle RTL"><i class="bi bi-arrow-left-right"></i></button><button class="theme-toggle theme-toggle-btn d-none d-xl-flex" aria-label="Toggle Dark Mode">
                     <i class="bi bi-moon"></i>
                 </button>
-                <a href="booking.html" class="btn-primary-brand d-none d-md-inline-block">Start a Project</a>
-                <button class="navbar-toggler d-lg-none btn border-0" type="button" data-bs-toggle="offcanvas"
+                <a href="booking.html" class="btn-primary-brand d-none d-xl-inline-block">Start a Project</a>
+                <button class="navbar-toggler d-xl-none btn border-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#mobileMenu">
                     <i class="bi bi-list fs-2 text-primary-brand"></i>
                 </button>
@@ -76,7 +76,11 @@
                 <a href="portfolio.html" class="text-decoration-none text-body">Portfolio</a>
                 <a href="case-studies.html" class="text-decoration-none text-body">Case Studies</a>
                 <a href="contact.html" class="text-decoration-none text-body">Contact</a>
-                <a href="booking.html" class="btn-primary-brand text-center mt-4">Start a Project</a>
+                <div class="d-flex gap-4 justify-content-center mt-3">
+                <button class="theme-toggle" aria-label="Toggle RTL Mode" title="Toggle RTL"><i class="bi bi-arrow-left-right"></i></button>
+                <button class="theme-toggle theme-toggle-btn" aria-label="Toggle Dark Mode"><i class="bi bi-moon"></i></button>
+            </div>
+            <a href="booking.html" class="btn-primary-brand text-center mt-4">Start a Project</a>
             </div>
         </div>
     </div>
@@ -368,3 +372,5 @@
 </body>
 
 </html>
+
+

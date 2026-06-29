@@ -40,13 +40,18 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
 body {
   font-family: var(--font-body);
   background-color: var(--cc-bg);
   color: var(--cc-text);
   line-height: 1.6;
   transition: background-color var(--transition-smooth), color var(--transition-smooth);
-  overflow-x: hidden;
   padding-top: 85px; /* Prevent header overlap */
 }
 
@@ -565,7 +570,6 @@ footer h4 {
   border-right: 4px solid var(--cc-primary);
 }
 .ba-after img {
-  width: 900px; /* Match max-width */
   max-width: none;
   height: 100%;
   object-fit: cover;
@@ -1157,8 +1161,14 @@ ul.list-unstyled li i {
 }
 
 /* Ensure Bootstrap text utilities respect the custom theme variables in dark mode */
-.text-muted, .text-secondary {
+[data-theme="dark"] .text-body {
+  color: var(--cc-text) !important;
+}
+[data-theme="dark"] .text-muted, [data-theme="dark"] .text-secondary {
   color: var(--cc-text-muted) !important;
+}
+[data-theme="dark"] .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
 }
 
 /* ==========================================================================
