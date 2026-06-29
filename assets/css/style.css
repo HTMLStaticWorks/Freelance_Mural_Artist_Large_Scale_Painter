@@ -506,9 +506,7 @@ footer h4 {
   to { transform: translateX(0); opacity: 1; }
 }
 
-.large-project-section {
-  /* Inherits standard body background and text color */
-}
+
 .large-project-img {
   border-radius: var(--border-radius);
   box-shadow: 0 30px 60px rgba(0,0,0,0.5);
@@ -1161,7 +1159,6 @@ ul.list-unstyled li i {
 /* Ensure Bootstrap text utilities respect the custom theme variables in dark mode */
 .text-muted, .text-secondary {
   color: var(--cc-text-muted) !important;
-}
 }
 
 /* ==========================================================================
