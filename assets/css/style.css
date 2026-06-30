@@ -575,8 +575,6 @@ footer h4 {
   background-size: cover;
   background-position: right center;
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
-  animation: slideInRight 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  opacity: 0;
 }
 
 @media (max-width: 1199px) {
