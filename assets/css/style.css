@@ -416,11 +416,13 @@ header {
 }
 
 .timeline-item:nth-child(odd) .timeline-dot {
-  right: -10px;
+  right: -10px !important;
+  left: auto !important;
 }
 
 .timeline-item:nth-child(even) .timeline-dot {
-  left: -10px;
+  left: -10px !important;
+  right: auto !important;
 }
 
 /* 5. Testimonials */
@@ -577,7 +579,6 @@ footer h4 {
   opacity: 0;
 }
 
-<<<<<<< HEAD
 @media (max-width: 1199px) {
   .split-hero {
     min-height: auto;
@@ -594,9 +595,6 @@ footer h4 {
     border-radius: var(--border-radius) var(--border-radius) 0 0;
   }
 }
-
-=======
->>>>>>> b7e4a190ba4cdb315c3e1a67b22f24696555d4ce
 @keyframes slideInRight {
   from {
     transform: translateX(100%);
@@ -1287,27 +1285,6 @@ ul.list-unstyled li i {
   margin-top: 0.25rem;
 }
 
-<<<<<<< HEAD
-
-=======
-/* Center-Align Numbered Headings (Timeline) */
-.timeline-item {
-  width: 100% !important;
-  left: 0 !important;
-  padding: 40px 0 0 0 !important;
-  text-align: center !important;
-}
-
-.timeline-dot {
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-}
-
-.process-timeline::before {
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-}
->>>>>>> b7e4a190ba4cdb315c3e1a67b22f24696555d4ce
 
 /* Fix text visibility on secondary-bg sections in dark mode */
 [data-theme="dark"] .newsletter-box,
