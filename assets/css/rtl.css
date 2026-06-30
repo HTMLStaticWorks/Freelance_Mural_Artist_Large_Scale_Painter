@@ -1,0 +1,144 @@
+/* ==========================================================================
+   RTL CSS - Automatically Loaded when RTL is toggled
+   ========================================================================== */
+
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] body {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Utilities Overrides */
+[dir="rtl"] .text-start {
+    text-align: right !important;
+}
+
+[dir="rtl"] .text-end {
+    text-align: left !important;
+}
+
+/* Offcanvas Menu */
+[dir="rtl"] .offcanvas-end {
+    right: auto !important;
+    left: 0 !important;
+    transform: translateX(-100%);
+}
+[dir="rtl"] .offcanvas.show {
+    transform: none;
+}
+[dir="rtl"] .btn-close {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+/* Typography and List */
+[dir="rtl"] ul, [dir="rtl"] ol {
+    padding-right: 2rem;
+    padding-left: 0;
+}
+
+/* Icons & Directional UI */
+[dir="rtl"] .bi-arrow-right {
+    transform: scaleX(-1);
+    display: inline-block;
+}
+[dir="rtl"] .bi-arrow-left {
+    transform: scaleX(-1);
+    display: inline-block;
+}
+[dir="rtl"] .bi-chevron-right {
+    transform: scaleX(-1);
+    display: inline-block;
+}
+[dir="rtl"] .bi-chevron-left {
+    transform: scaleX(-1);
+    display: inline-block;
+}
+
+/* Form Controls */
+[dir="rtl"] .form-control, [dir="rtl"] .form-select {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+/* Animations */
+[dir="rtl"] .reveal-fade-left {
+    transform: translateX(50px);
+}
+[dir="rtl"] .reveal-fade-left.active {
+    transform: translateX(0);
+}
+[dir="rtl"] .reveal-fade-right {
+    transform: translateX(-50px);
+}
+[dir="rtl"] .reveal-fade-right.active {
+    transform: translateX(0);
+}
+
+
+
+/* Adjust pseudo elements for breadcrumbs or arrows */
+[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+    float: right;
+    padding-left: 0.5rem;
+    padding-right: 0;
+}
+
+/* ==========================================================================
+   Creative Process Timeline RTL Fixes
+   ========================================================================== */
+
+/* Desktop Timeline (Centered) */
+[dir="rtl"] .timeline-item,
+[dir="rtl"] .timeline-item:nth-child(odd),
+[dir="rtl"] .timeline-item:nth-child(even) {
+    width: 100% !important;
+    left: auto !important;
+    right: 0 !important;
+    padding: 40px 0 0 0 !important;
+    text-align: center !important;
+}
+
+[dir="rtl"] .timeline-dot,
+[dir="rtl"] .timeline-item:nth-child(odd) .timeline-dot,
+[dir="rtl"] .timeline-item:nth-child(even) .timeline-dot {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+}
+
+/* Mobile Timeline Override */
+@media (max-width: 768px) {
+    [dir="rtl"] .process-timeline::before {
+        left: auto !important;
+        right: 20px !important;
+    }
+    [dir="rtl"] .timeline-item,
+    [dir="rtl"] .timeline-item:nth-child(odd),
+    [dir="rtl"] .timeline-item:nth-child(even) {
+        left: auto !important;
+        right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 60px !important;
+        text-align: right !important;
+    }
+    [dir="rtl"] .timeline-dot,
+    [dir="rtl"] .timeline-item:nth-child(odd) .timeline-dot,
+    [dir="rtl"] .timeline-item:nth-child(even) .timeline-dot {
+        left: auto !important;
+        right: 10px !important;
+        transform: none !important;
+    }
+}
+
+/* ==========================================================================
+   Testimonial Cards RTL Fixes
+   ========================================================================== */
+[dir="rtl"] .client-avatar {
+    margin-right: 0;
+    margin-left: 15px;
+}
