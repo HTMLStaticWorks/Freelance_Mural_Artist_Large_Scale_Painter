@@ -92,32 +92,46 @@
    Creative Process Timeline RTL Fixes
    ========================================================================== */
 
-/* Desktop Timeline (Centered) */
-[dir="rtl"] .timeline-item,
-[dir="rtl"] .timeline-item:nth-child(odd),
-[dir="rtl"] .timeline-item:nth-child(even) {
-    width: 100% !important;
+/* Desktop Timeline RTL */
+[dir="rtl"] .timeline-item:nth-child(odd) {
     left: auto !important;
     right: 0 !important;
-    padding: 40px 0 0 0 !important;
-    text-align: center !important;
+    padding-right: 0 !important;
+    padding-left: 50px !important;
+    text-align: left !important;
 }
 
-[dir="rtl"] .timeline-dot,
-[dir="rtl"] .timeline-item:nth-child(odd) .timeline-dot,
-[dir="rtl"] .timeline-item:nth-child(even) .timeline-dot {
-    left: 50% !important;
+[dir="rtl"] .timeline-item:nth-child(even) {
+    left: auto !important;
+    right: 50% !important;
+    padding-left: 0 !important;
+    padding-right: 50px !important;
+    text-align: right !important;
+}
+
+[dir="rtl"] .timeline-item:nth-child(odd) .timeline-dot {
     right: auto !important;
-    transform: translateX(-50%) !important;
+    left: -10px !important;
+    transform: none !important;
 }
 
-/* Mobile Timeline Override */
+[dir="rtl"] .timeline-item:nth-child(even) .timeline-dot {
+    left: auto !important;
+    right: -10px !important;
+    transform: none !important;
+}
+
+/* Mobile Timeline Override RTL */
 @media (max-width: 768px) {
     [dir="rtl"] .process-timeline::before {
         left: auto !important;
         right: 20px !important;
     }
-    [dir="rtl"] .timeline-item,
+    
+    [dir="rtl"] .timeline-item {
+        width: 100% !important;
+    }
+
     [dir="rtl"] .timeline-item:nth-child(odd),
     [dir="rtl"] .timeline-item:nth-child(even) {
         left: auto !important;
@@ -126,7 +140,7 @@
         padding-right: 60px !important;
         text-align: right !important;
     }
-    [dir="rtl"] .timeline-dot,
+
     [dir="rtl"] .timeline-item:nth-child(odd) .timeline-dot,
     [dir="rtl"] .timeline-item:nth-child(even) .timeline-dot {
         left: auto !important;

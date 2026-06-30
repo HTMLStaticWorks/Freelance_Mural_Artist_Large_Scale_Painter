@@ -571,10 +571,27 @@ footer h4 {
 .split-hero-img {
   background-image: url('../img/home2-hero.png');
   background-size: cover;
-  background-position: center;
+  background-position: right center;
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
   animation: slideInRight 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   opacity: 0;
+}
+
+@media (max-width: 1199px) {
+  .split-hero {
+    min-height: auto;
+    flex-direction: column;
+  }
+  
+  .split-hero-text {
+    padding: 10% 5%;
+  }
+
+  .split-hero-img {
+    min-height: 50vh;
+    clip-path: none;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
 }
 
 @keyframes slideInRight {
@@ -1267,23 +1284,7 @@ ul.list-unstyled li i {
   margin-top: 0.25rem;
 }
 
-/* Center-Align Numbered Headings (Timeline) */
-.timeline-item {
-  width: 100% !important;
-  left: 0 !important;
-  padding: 40px 0 0 0 !important;
-  text-align: center !important;
-}
 
-.timeline-dot {
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-}
-
-.process-timeline::before {
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-}
 
 /* Fix text visibility on secondary-bg sections in dark mode */
 [data-theme="dark"] .newsletter-box,
