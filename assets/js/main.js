@@ -10,6 +10,46 @@ document.addEventListener('DOMContentLoaded', () => {
         updateThemeIcons(savedTheme);
     }
 
+    // Inject rtl.css dynamically
+    if (!document.querySelector('link[href*="rtl.css"]')) {
+        const rtlCss = document.createElement('link');
+        rtlCss.rel = 'stylesheet';
+        rtlCss.href = 'assets/css/rtl.css';
+        document.head.appendChild(rtlCss);
+    }
+
+    // RTL Toggle
+    const rtlToggles = document.querySelectorAll('[aria-label="Toggle RTL Mode"]');
+    const bootstrapLink = document.querySelector('link[href*="bootstrap.min.css"], link[href*="bootstrap.rtl.min.css"]');
+    
+    // Check saved RTL preference
+    const savedDir = localStorage.getItem('dir');
+    if (savedDir) {
+        body.setAttribute('dir', savedDir);
+        if (savedDir === 'rtl' && bootstrapLink) {
+            bootstrapLink.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css';
+        }
+    }
+
+    rtlToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            let currentDir = body.getAttribute('dir');
+            let newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
+            
+            body.setAttribute('dir', newDir);
+            localStorage.setItem('dir', newDir);
+            
+            if (bootstrapLink) {
+                if (newDir === 'rtl') {
+                    bootstrapLink.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css';
+                } else {
+                    bootstrapLink.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css';
+                }
+            }
+        });
+    });
+
     themeToggles.forEach(toggle => {
         toggle.addEventListener('click', () => {
             let currentTheme = body.getAttribute('data-theme');
