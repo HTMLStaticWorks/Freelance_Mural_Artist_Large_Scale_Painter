@@ -92,6 +92,7 @@
    Creative Process Timeline RTL Fixes
    ========================================================================== */
 
+<<<<<<< HEAD
 /* Desktop Timeline RTL */
 [dir="rtl"] .timeline-item:nth-child(odd) {
     left: auto !important;
@@ -122,16 +123,42 @@
 }
 
 /* Mobile Timeline Override RTL */
+=======
+/* Desktop Timeline (Centered) */
+[dir="rtl"] .timeline-item,
+[dir="rtl"] .timeline-item:nth-child(odd),
+[dir="rtl"] .timeline-item:nth-child(even) {
+    width: 100% !important;
+    left: auto !important;
+    right: 0 !important;
+    padding: 40px 0 0 0 !important;
+    text-align: center !important;
+}
+
+[dir="rtl"] .timeline-dot,
+[dir="rtl"] .timeline-item:nth-child(odd) .timeline-dot,
+[dir="rtl"] .timeline-item:nth-child(even) .timeline-dot {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+}
+
+/* Mobile Timeline Override */
+>>>>>>> b7e4a190ba4cdb315c3e1a67b22f24696555d4ce
 @media (max-width: 768px) {
     [dir="rtl"] .process-timeline::before {
         left: auto !important;
         right: 20px !important;
     }
+<<<<<<< HEAD
     
     [dir="rtl"] .timeline-item {
         width: 100% !important;
     }
 
+=======
+    [dir="rtl"] .timeline-item,
+>>>>>>> b7e4a190ba4cdb315c3e1a67b22f24696555d4ce
     [dir="rtl"] .timeline-item:nth-child(odd),
     [dir="rtl"] .timeline-item:nth-child(even) {
         left: auto !important;
@@ -140,7 +167,11 @@
         padding-right: 60px !important;
         text-align: right !important;
     }
+<<<<<<< HEAD
 
+=======
+    [dir="rtl"] .timeline-dot,
+>>>>>>> b7e4a190ba4cdb315c3e1a67b22f24696555d4ce
     [dir="rtl"] .timeline-item:nth-child(odd) .timeline-dot,
     [dir="rtl"] .timeline-item:nth-child(even) .timeline-dot {
         left: auto !important;
